@@ -132,7 +132,12 @@ class Bootstrapper{
             // todo: use a compiler flag when available
             var configPath = (window.DEBUG)? 'extensions/' + extension.name + '/build/' + that.params.getLocaleName() + '.config.json' : 'lib/' + extension.name + '.' + that.params.getLocaleName() + '.config.json';
 
-            $.getJSON(configPath, (config) => {
+            $.getJSON(configPath, {
+                xhrFields: {
+                    withCredentials: true
+                },
+                crossDomain: true
+            }, (config) => {
                 this.extendConfig(extension, config, configExtension, cb);
             });
         });
@@ -161,7 +166,12 @@ class Bootstrapper{
         } else if (this.params.config){ // if data-config has been set
 
             if (this.isCORSEnabled()){
-                $.getJSON(this.params.config, (configExtension) => {
+                $.getJSON(this.params.config, {
+                    xhrFields: {
+                        withCredentials: true
+                    },
+                    crossDomain: true
+                }, (configExtension) => {
                     cb(configExtension);
                 });
             } else {
