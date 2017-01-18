@@ -19,6 +19,11 @@ class Bootstrapper{
 
     constructor(extensions: any) {
         this.extensions = extensions;
+        $.ajaxSetup({
+            xhrFields: {
+                withCredentials: true
+            }
+        });
     }
 
     bootstrap(params?: BootstrapParams): void {
@@ -132,12 +137,7 @@ class Bootstrapper{
             // todo: use a compiler flag when available
             var configPath = (window.DEBUG)? 'extensions/' + extension.name + '/build/' + that.params.getLocaleName() + '.config.json' : 'lib/' + extension.name + '.' + that.params.getLocaleName() + '.config.json';
 
-            $.getJSON(configPath, {
-                xhrFields: {
-                    withCredentials: true
-                },
-                crossDomain: true
-            }, (config) => {
+            $.getJSON(configPath, (config) => {
                 this.extendConfig(extension, config, configExtension, cb);
             });
         });
@@ -166,12 +166,7 @@ class Bootstrapper{
         } else if (this.params.config){ // if data-config has been set
 
             if (this.isCORSEnabled()){
-                $.getJSON(this.params.config, {
-                    xhrFields: {
-                        withCredentials: true
-                    },
-                    crossDomain: true
-                }, (configExtension) => {
+                $.getJSON(this.params.config, (configExtension) => {
                     cb(configExtension);
                 });
             } else {
