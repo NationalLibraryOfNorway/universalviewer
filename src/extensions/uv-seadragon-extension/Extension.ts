@@ -926,7 +926,12 @@ class Extension extends BaseExtension implements ISeadragonExtension {
         var searchUri = this.getSearchWithinServiceUri();
         searchUri = String.format(searchUri, terms);
 
-        $.getJSON(searchUri, (results: any) => {
+        $.getJSON(searchUri, {
+            xhrFields: {
+                withCredentials: true
+            },
+            crossDomain: true
+        }, (results: any) => {
             if (results.resources && results.resources.length) {
                 that.parseSearchWithinResults(results);
             }
