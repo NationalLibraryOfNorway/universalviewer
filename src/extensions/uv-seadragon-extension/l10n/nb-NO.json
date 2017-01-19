@@ -10,7 +10,7 @@
     "canvasIndexOutOfRange": "Canvas index out of range.",
     "degradedResourceMessage": "Vennligst logg på for å se få full oppløsning.",
     "degradedResourceLogin": "Logg på",
-    "forbiddenResourceMessage": "Du har ikke rettigheter til å se dette  objektet",
+    "forbiddenResourceMessage": "Du har ikke rettigheter til å se dette objektet",
     "termsOfUse": "Vilkår for bruk"
   },
   "modules": {
@@ -206,7 +206,7 @@
         "pagingEnabled": "Tosidig visning",
         "preserveViewport": "Behold zoom",
         "title": "Innstillinger",
-        "website": "<a href='https://github.com/universalviewer/universalviewer#contributors'>more info</a>"
+        "website": "<a href='https://github.com/universalviewer/universalviewer#contributors'>mer info</a>"
       }
     },
     "shareDialogue": {
