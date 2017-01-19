@@ -183,7 +183,7 @@
       {
         "clearSearch": "Tøm",
         "defaultLabel": "-",
-        "displaying": "{0} {1} of {2}",
+        "displaying": "{0} {1} av {2}",
         "enterKeyword": "Skriv søkeord",
         "image": "bilde",
         "imageCaps": "Bilde",
@@ -194,8 +194,8 @@
         "pageCaps": "Side",
         "previousResult": "Forrige treff",
         "print": "Skriv ut",
-        "resultFoundFor": "treff på",
-        "resultsFoundFor": "treff på",
+        "resultFoundFor": "side med treff på",
+        "resultsFoundFor": "sider med treff på",
         "searchWithin": "Søk i dette objektet:"
       }
     },
