@@ -1,225 +1,225 @@
 {
   "localisation": {
-    "label": "Norwegian (NO)"
+    "label": "Norsk bokmål (NO)"
   },
   "options": {
   },
   "content": {
-    "authCORSError": "Your browser does not support CORS, please upgrade to view this content.",
-    "authorisationFailedMessage": "Your log-in attempt did not appear to be successful. Please try again.",
+    "authCORSError": "Nettleseren din støtter ikke CORS, vennligst oppgrader for å se innholdet.",
+    "authorisationFailedMessage": "Innloggingsforsøket ditt var mislykket. Vennligst prøv igjen.",
     "canvasIndexOutOfRange": "Canvas index out of range.",
-    "degradedResourceMessage": "Please log in to view at full quality.",
-    "degradedResourceLogin": "log in",
-    "forbiddenResourceMessage": "Your current access rights are insufficient to view this image",
-    "termsOfUse": "Terms of Use"
+    "degradedResourceMessage": "Vennligst logg på for å se få full oppløsning.",
+    "degradedResourceLogin": "Logg på",
+    "forbiddenResourceMessage": "Du har ikke rettigheter til å se dette  objektet",
+    "termsOfUse": "Vilkår for bruk"
   },
   "modules": {
     "clickThroughDialogue": {
       "content": {
-        "viewTerms": "Read Full Terms and Conditions"
+        "viewTerms": "Les vilkårene for bruk"
       }
     },
     "contentLeftPanel": {
       "content": {
-        "collapse": "Collapse Contents",
-        "collapseFull": "Collapse Gallery",
-        "date": "date",
-        "expand": "Expand Contents",
-        "expandFull": "Expand Gallery",
-        "index": "Index",
-        "sortBy": "Sort By:",
-        "thumbnails": "Thumbnails",
+        "collapse": "Skjul innhold",
+        "collapseFull": "Skjul galleri",
+        "date": "Dato",
+        "expand": "Vis innhold",
+        "expandFull": "Vis galleri",
+        "index": "Indeks",
+        "sortBy": "Sorter etter:",
+        "thumbnails": "Miniatyrbilder",
         "title": "Innhold",
-        "volume": "volume"
+        "volume": "Bind"
       }
     },
     "dialogue": {
       "content": {
-        "close": "Close"
+        "close": "Lukk"
       }
     },
     "downloadDialogue": {
       "content": {
-        "currentViewAsJpg": "Current view {0} x {1}px (jpg)",
-        "currentViewAsJpgExplanation": "Opens in a new window",
-        "download": "Download",
-        "downloadSelection": "Download Selection",
-        "downloadSelectionExplanation": "Opens a dialogue to select which pages to download.",
-        "editSettings": "Edit Settings",
-        "entireDocument": "Entire document ({0})",
-        "entireFileAsOriginal": "Entire file ({0})",
-        "noneAvailable": "No download options are available.",
-        "pagingNote": "Please turn off Two Page View for additional options.",
-        "preview": "Preview",
-        "title": "Download",
-        "wholeImageHighRes": "Whole image {0} x {1}px ({2})",
-        "wholeImageHighResExplanation": "Opens in a new window.",
-        "wholeImagesHighRes": "Whole images ({0})",
-        "wholeImagesHighResExplanation": "Opens in two new windows.",
-        "wholeImageLowResAsJpg": "Whole image {0} x {1}px (jpg)",
-        "wholeImageLowResAsJpgExplanation": "Opens in a new window."
+        "currentViewAsJpg": "Aktuell visning {0} x {1}px (jpg)",
+        "currentViewAsJpgExplanation": "Åpner i nytt vindu",
+        "download": "Last ned",
+        "downloadSelection": "Last ned valgte",
+        "downloadSelectionExplanation": "Åpner en dialogboks for å velge hvilke sider du vil laste ned.",
+        "editSettings": "Endre innstillinger",
+        "entireDocument": "Hele dokumentet ({0})",
+        "entireFileAsOriginal": "Hele filen ({0})",
+        "noneAvailable": "Nedlasting er ikke mulig.",
+        "pagingNote": "Vennligst skru av tosidig visning for flere alternativer.",
+        "preview": "Forhåndsvisning",
+        "title": "Last ned",
+        "wholeImageHighRes": "Hele bildet {0} x {1}px ({2})",
+        "wholeImageHighResExplanation": "Åpner i et nytt vindu.",
+        "wholeImagesHighRes": "Hele bilder ({0})",
+        "wholeImagesHighResExplanation": "Åpner i to nye vinduer.",
+        "wholeImageLowResAsJpg": "Hele bildet {0} x {1}px (jpg)",
+        "wholeImageLowResAsJpgExplanation": "Åpner i et nytt vindu."
       }
     },
     "footerPanel": {
       "content": {
-        "bookmark": "Add to bookmarks",
-        "download": "Download",
-        "embed": "Embed",
-        "feedback": "Feedback",
-        "exitFullScreen": "Exit Full Screen",
-        "fullScreen": "Full Screen",
-        "open": "Open",
-        "share": "Share"
+        "bookmark": "Legg til i bokmerker",
+        "download": "Last ned",
+        "embed": "Bygg inn",
+        "feedback": "Tilbakemelding",
+        "exitFullScreen": "Gå ut av fullskjermvisning",
+        "fullScreen": "Fullskjermvisning",
+        "open": "Åpne",
+        "share": "Del"
       }
     },
     "genericDialogue": {
       "content": {
-        "emptyValue": "please enter a value.",
-        "invalidNumber": "Please enter a valid number.",
-        "noMatches": "No matches were found.",
+        "emptyValue": "Vennligst skriv inn en verdi.",
+        "invalidNumber": "Vennligst skriv inn et tall.",
+        "noMatches": "Ingen treff ble funnet.",
         "ok": "OK",
-        "pageNotFound": "This item does not contain a page with the number you entered. Try switching the numbering mode to 'image'.",
-        "refresh": "Refresh"
+        "pageNotFound": "Dette objektet har ikke en side med det nummeret du skrev inn. Prøv å endre valg fra 'side' til 'bilde'.",
+        "refresh": "Gjenoppfrisk"
       }
     },
     "helpDialogue": {
       "content": {
-        "text": "placeholder text",
-        "title": "Help"
+        "text": "Eksempeltekst",
+        "title": "Hjelp"
       }
     },
     "loginDialogue": {
       "content": {
-        "login": "Login",
-        "logout": "Logout",
-        "cancel": "Cancel"
+        "login": "Logg på",
+        "logout": "Logg av",
+        "cancel": "Avbryt"
       }
     },
     "mobileFooterPanel": {
       "content": {
-        "rotateRight": "Rotate Right",
-        "moreInfo": "More Information",
-        "zoomIn": "Zoom In",
-        "zoomOut": "Zoom Out"
+        "rotateRight": "Roter mot høyre",
+        "moreInfo": "Mer informasjon",
+        "zoomIn": "Zoom inn",
+        "zoomOut": "Zoom ut"
       }
     },
     "moreInfoRightPanel": {
       "content": {
-        "attribution": "Attribution",
-        "collapse": "Collapse Information",
-        "collapseFull": "Collapse Gallery",
-        "description": "Description",
-        "expand": "Expand Information",
-        "expandFull": "Expand Gallery",
-        "holdingText": "Your module goes here!",
-        "less": "less",
-        "license": "License",
+        "attribution": "Tillatelse",
+        "collapse": "Skjul informasjon",
+        "collapseFull": "Skjul galleri",
+        "description": "Beskrivelse",
+        "expand": "Vis informasjon",
+        "expandFull": "Vis galleri",
+        "holdingText": "Her er plass til modulen din!",
+        "less": "mindre",
+        "license": "Lisens",
         "logo": "Logo",
-        "more": "more",
-        "noData": "No data to display",
-        "page": "Page",
-        "title": "More Information",
-        "manifestHeader": "About the item",
-        "canvasHeader": "About the image",
-        "copyToClipboard": "Copy to clipboard",
-        "copiedToClipboard": "Copied to clipboard"
+        "more": "mer",
+        "noData": "Ingen data å vise",
+        "page": "Side",
+        "title": "Mer informasjon",
+        "manifestHeader": "Om objektet",
+        "canvasHeader": "Om bildet",
+        "copyToClipboard": "Kopier til utklippstavle",
+        "copiedToClipboard": "Kopiert til utklippstavlen"
       }
     },
     "multiSelectDialogue": {
       "content": {
-        "select": "Download",
-        "selectAll": "Select All",
-        "title": "Select Pages for Download"
+        "select": "Last ned",
+        "selectAll": "Velg alle",
+        "title": "Velg sider som skal lastes ned"
       }
     },
     "pagingHeaderPanel": {
       "content": {
-        "close": "Close",
-        "emptyValue": "Please enter a value",
-        "first": "First",
-        "firstImage": "First Image",
-        "firstPage": "First Page",
+        "close": "Lukk",
+        "emptyValue": "Vennligst skriv inn en verdi",
+        "first": "Første",
+        "firstImage": "Første bilde",
+        "firstPage": "Første side",
         "folio": "Folio",
-        "gallery": "Gallery",
-        "go": "Go",
-        "help": "Help",
-        "image": "Image",
-        "last": "Last",
-        "lastImage": "Last Image",
-        "lastPage": "Last Page",
-        "next": "Next",
-        "nextImage": "Next Image",
-        "nextPage": "Next Page",
-        "of": "of {0}",
-        "oneUp": "Single page view",
-        "page": "Page",
-        "previous": "Previous",
-        "previousImage": "Previous Image",
-        "previousPage": "Previous Page",
-        "settings": "Settings",
-        "twoUp": "Two page view"
+        "gallery": "Galleri",
+        "go": "Gå",
+        "help": "Hjelp",
+        "image": "Bilde",
+        "last": "Siste",
+        "lastImage": "Siste bilde",
+        "lastPage": "Siste side",
+        "next": "Neste",
+        "nextImage": "Neste bilde",
+        "nextPage": "Neste side",
+        "of": "av {0}",
+        "oneUp": "Enkeltsidevisning",
+        "page": "Side",
+        "previous": "Forrige",
+        "previousImage": "Forrige bilde",
+        "previousPage": "Forrige side",
+        "settings": "Innstillinger",
+        "twoUp": "Tosidevisning"
       }
     },
     "seadragonCenterPanel": {
       "content": {
-        "attribution": "Attribution",
-        "goHome": "Go Home",
-        "imageUnavailable": "Image Unavailable",
-        "next": "Next",
-        "previous": "Previous",
-        "rotateRight": "Rotate Right",
-        "zoomIn": "Zoom In",
-        "zoomOut": "Zoom Out"
+        "attribution": "Tillatelse",
+        "goHome": "Hjem",
+        "imageUnavailable": "Bildet er ikke tilgjengelig",
+        "next": "Neste",
+        "previous": "Forrige",
+        "rotateRight": "Roter til høyre",
+        "zoomIn": "Zoom inn",
+        "zoomOut": "Zoom ut"
       }
     },
     "restrictedDialogue": {
       "content": {
-        "cancel": "Cancel"
+        "cancel": "Avbryt"
       }
     },
     "searchFooterPanel":
     {
       "content":
       {
-        "clearSearch": "Clear",
+        "clearSearch": "Tøm",
         "defaultLabel": "-",
         "displaying": "{0} {1} of {2}",
-        "enterKeyword": "Enter Keyword",
-        "image": "image",
-        "imageCaps": "Image",
-        "instanceFound": "1 instance of '{0}' found",
-        "instancesFound": "{0} instances of '{1}' found",
-        "nextResult": "Next Result",
-        "page": "page",
-        "pageCaps": "Page",
-        "previousResult": "Previous Result",
-        "print": "Print",
-        "resultFoundFor": "result found for",
-        "resultsFoundFor": "results found for",
-        "searchWithin": "Search within this item:"
+        "enterKeyword": "Skriv søkeord",
+        "image": "bilde",
+        "imageCaps": "Bilde",
+        "instanceFound": "Ett tilfelle av '{0}' ble funnet",
+        "instancesFound": "{0} tilfeller av '{1}' ble funnet",
+        "nextResult": "Neste treff",
+        "page": "side",
+        "pageCaps": "Side",
+        "previousResult": "Forrige treff",
+        "print": "Skriv ut",
+        "resultFoundFor": "treff på",
+        "resultsFoundFor": "treff på",
+        "searchWithin": "Søk i dette objektet:"
       }
     },
     "settingsDialogue": {
       "content": {
-        "locale": "Locale",
-        "navigatorEnabled": "Navigator Enabled",
-        "pagingEnabled": "Two Page View",
-        "preserveViewport": "Preserve Zoom",
-        "title": "Settings",
+        "locale": "Språk",
+        "navigatorEnabled": "Skru på navigator",
+        "pagingEnabled": "Tosidig visning",
+        "preserveViewport": "Behold zoom",
+        "title": "Innstillinger",
         "website": "<a href='https://github.com/universalviewer/universalviewer#contributors'>more info</a>"
       }
     },
     "shareDialogue": {
       "content": {
-        "customSize": "custom",
-        "embed": "Embed",
-        "embedInstructions": "To embed this item in your own website, copy and paste the code below.",
-        "height": "Height",
-        "iiif": "IIIF Manifest",
-        "share": "Share",
-        "shareInstructions": "To share this item, copy the URL below.",
-        "size": "Size:",
-        "width": "Width"
+        "customSize": "Velg selv",
+        "embed": "Bygg inn",
+        "embedInstructions": "For å bygge dette objektet inn på din egen nettside, kopier med deg koden nedenfor og lim den inn.",
+        "height": "Høyde",
+        "iiif": "IIIF manifest",
+        "share": "Del",
+        "shareInstructions": "Kopier url-en under for å dele dette objektet.",
+        "size": "Størrelse:",
+        "width": "Bredde"
       }
     }
   }
