@@ -194,8 +194,8 @@
         "pageCaps": "Side",
         "previousResult": "Forrige treff",
         "print": "Skriv ut",
-        "resultFoundFor": "side med treff på",
-        "resultsFoundFor": "sider med treff på",
+        "resultFoundFor": "treff på",
+        "resultsFoundFor": "treff på",
         "searchWithin": "Søk i dette objektet:"
       }
     },
