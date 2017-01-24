@@ -3127,7 +3127,7 @@ var Manifesto;
                     port: u.port,
                     path: u.path,
                     method: "GET",
-                    withCredentials: true
+                    withCredentials: false
                 };
                 if (u.protocol === 'https:') {
                     request = https.request(opts, function (response) {

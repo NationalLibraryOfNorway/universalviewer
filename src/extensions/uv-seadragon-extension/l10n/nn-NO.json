@@ -27,6 +27,8 @@
         "expand": "Vis innhold",
         "expandFull": "Vis galleri",
         "index": "Indeks",
+        "searchResult": "{0} treff",
+        "searchResults": "{0} treff",
         "sortBy": "Sorter etter:",
         "thumbnails": "Miniatyrbilder",
         "title": "Innhold",
@@ -203,6 +205,7 @@
       "content": {
         "locale": "Språk",
         "navigatorEnabled": "Skru på navigator",
+        "clickToZoomEnabled": "Zoom inn med museklikk",
         "pagingEnabled": "Tosidig visning",
         "preserveViewport": "Behold zoom",
         "title": "Innstillinger",
