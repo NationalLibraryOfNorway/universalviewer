@@ -194,7 +194,8 @@
                 "print": "Argraffu",
                 "resultFoundFor": "canlyniad a geir ar gyfer",
                 "resultsFoundFor": "canlyniad ar gyfer",
-                "searchWithin": "Chwilio tu fewn i:"
+                "searchWithin": "Chwilio tu fewn i:",
+                "noMatches": "Dim canlyniad sy'n cyfateb."
             }
         },
         "settingsDialogue": {

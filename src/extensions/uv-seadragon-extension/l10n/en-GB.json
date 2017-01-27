@@ -198,7 +198,8 @@
         "print": "Print",
         "resultFoundFor": "result found for",
         "resultsFoundFor": "results found for",
-        "searchWithin": "Search within this item:"
+        "searchWithin": "Search within this item:",
+        "noMatches": "No matches were found."
       }
     },
     "settingsDialogue": {

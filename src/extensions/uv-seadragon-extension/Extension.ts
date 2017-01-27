@@ -147,7 +147,7 @@ class Extension extends BaseExtension implements ISeadragonExtension {
         });
 
         $.subscribe(BaseCommands.LEFTPANEL_COLLAPSE_FULL_FINISH, (e) => {
-            Shell.$centerPanel.show();            
+            Shell.$centerPanel.show();
             this.resize();
         });
 
@@ -526,7 +526,7 @@ class Extension extends BaseExtension implements ISeadragonExtension {
 
     treeNodeSelected(node: ITreeNode): void{
         const data: any = node.data;
-        
+
         if (!data.type) return;
 
         switch (data.type){
@@ -552,7 +552,7 @@ class Extension extends BaseExtension implements ISeadragonExtension {
     }
 
     prevSearchResult(): void {
-        let foundResult: SearchResult; 
+        let foundResult: SearchResult;
 
         // get the first result with a canvasIndex less than the current index.
         for (let i = this.searchResults.length - 1; i >= 0; i--) {
@@ -567,8 +567,8 @@ class Extension extends BaseExtension implements ISeadragonExtension {
     }
 
     nextSearchResult(): void {
-        let foundResult: SearchResult; 
-        
+        let foundResult: SearchResult;
+
         // get the first result with an index greater than the current index.
         for (let i = 0; i < this.searchResults.length; i++) {
             const result: SearchResult = this.searchResults[i];
@@ -639,9 +639,9 @@ class Extension extends BaseExtension implements ISeadragonExtension {
             height = height + y;
             y = 0;
         }
-        
+
         width = Math.min(width, canvas.getWidth());
-        height = Math.min(height, canvas.getHeight());       
+        height = Math.min(height, canvas.getHeight());
         let regionWidth: number = width;
         let regionHeight: number = height;
 
@@ -662,7 +662,7 @@ class Extension extends BaseExtension implements ISeadragonExtension {
                 width = Math.round((width / height) * newHeight);
                 height = newHeight;
             }
-          } 
+          }
         }
 
         dimensions.region = new Size(regionWidth, regionHeight);
@@ -875,29 +875,29 @@ class Extension extends BaseExtension implements ISeadragonExtension {
 
     getNextPageIndex(canvasIndex?: number): number {
        if (_.isUndefined(canvasIndex)) canvasIndex = this.helper.canvasIndex;
-    
+
        let index: number;
-    
+
        if (this.isPagingSettingEnabled()){
            let indices: number[] = this.getPagedIndices(canvasIndex);
-    
+
            if (this.helper.isRightToLeft()){
                index = indices[0] + 1;
            } else {
                index = indices.last() + 1;
            }
-    
+
        } else {
            index = canvasIndex + 1;
        }
-    
+
        if (index > this.helper.getTotalCanvases() - 1) {
            return -1;
        }
-    
+
        return index;
     }
-    
+
     getAutoCompleteService(): Manifesto.IService {
        const service: Manifesto.IService = this.helper.getSearchWithinService();
        if (!service) return null;
@@ -935,33 +935,33 @@ class Extension extends BaseExtension implements ISeadragonExtension {
         searchUri = String.format(searchUri, terms);
 
         this.getSearchResults(searchUri, terms, this.searchResults, (results: SearchResult[]) => {
-            
+
             this.isSearching = false;
 
             if (results.length) {
                 this.searchResults = results.sort((a, b) => {
                     return a.canvasIndex - b.canvasIndex;
                 });
-                
+
                 $.publish(Commands.SEARCH_RESULTS, [{terms, results}]);
 
                 // reload current index as it may contain results.
                 that.viewPage(that.helper.canvasIndex, true);
             } else {
-                that.showMessage(that.config.modules.genericDialogue.content.noMatches, () => {
+                //that.showMessage(that.config.modules.genericDialogue.content.noMatches, () => {
                     $.publish(Commands.SEARCH_RESULTS_EMPTY);
-                });
+                //});
             }
         });
     }
 
-    getSearchResults(searchUri: string, 
+    getSearchResults(searchUri: string,
                     terms: string,
                     searchResults: SearchResult[],
                     cb: (results: SearchResult[]) => void): void {
 
         $.getJSON(searchUri, (results: any) => {
-            
+
             if (results.resources && results.resources.length) {
                 searchResults = searchResults.concat(this.parseSearchJson(results, searchResults));
             }
@@ -1016,11 +1016,11 @@ class Extension extends BaseExtension implements ISeadragonExtension {
 
     isFirstSearchResultRect(): boolean {
         return this.getCurrentSearchResultRectIndex() === 0;
-    } 
+    }
 
     getLastSearchResultRectIndex(): number {
         return this.getTotalSearchResultRects() - 1;
-    } 
+    }
 
     getPagedIndices(canvasIndex?: number): number[] {
         if (_.isUndefined(canvasIndex)) canvasIndex = this.helper.canvasIndex;

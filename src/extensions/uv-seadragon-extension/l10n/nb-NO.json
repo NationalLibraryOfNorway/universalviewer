@@ -198,7 +198,8 @@
         "print": "Skriv ut",
         "resultFoundFor": "treff på",
         "resultsFoundFor": "treff på",
-        "searchWithin": "Søk i dette objektet:"
+        "searchWithin": "Søk i dette objektet:",
+        "noMatches": "Ingen treff ble funnet."
       }
     },
     "settingsDialogue": {

@@ -31,6 +31,7 @@ class FooterPanel extends BaseFooterPanel {
     $searchResultsInfo: JQuery;
     $searchText: JQuery;
     $searchTextContainer: JQuery;
+    $searchResultNoMatchesContainer: JQuery;
 
     currentPlacemarkerIndex: number;
     placemarkerTouched: boolean = false;
@@ -69,6 +70,7 @@ class FooterPanel extends BaseFooterPanel {
 
         $.subscribe(Commands.SEARCH_RESULTS_EMPTY, () => {
             this.hideSearchSpinner();
+            this.showSearchResultEmptyMessage();
         });
 
         $.subscribe(Commands.SEARCH_RESULT_RECT_CHANGED, () => {
@@ -97,6 +99,12 @@ class FooterPanel extends BaseFooterPanel {
 
         this.$searchButton = $('<a class="imageButton searchButton" tabindex="0"></a>');
         this.$searchTextContainer.append(this.$searchButton);
+
+        // search result is empty
+        this.$element.prepend(this.$searchResultNoMatchesContainer);
+        this.$searchResultNoMatchesContainer = $('<div class="label noMatches">' + this.content.noMatches + '</div>');
+        this.hideSearchResultEmptyMessage();
+        this.$searchOptions.append(this.$searchResultNoMatchesContainer);
 
         // search results.
         this.$searchPagerContainer = $('<div class="searchPager"></div>');
@@ -262,7 +270,7 @@ class FooterPanel extends BaseFooterPanel {
 
         // if zoom to search result is enabled and there is a highlighted search result.
         if (this.isZoomToSearchResultEnabled() && (<ISeadragonExtension>this.extension).currentSearchResultRect) {
-            
+
             if (currentCanvasIndex < firstSearchResultCanvasIndex) {
                 return false;
             } else if (currentCanvasIndex === firstSearchResultCanvasIndex) {
@@ -273,7 +281,7 @@ class FooterPanel extends BaseFooterPanel {
 
             return true;
         }
-        
+
         return (currentCanvasIndex > firstSearchResultCanvasIndex);
     }
 
@@ -298,11 +306,11 @@ class FooterPanel extends BaseFooterPanel {
                     return false;
                 }
             }
-            
+
             return true;
         }
 
-        return (currentCanvasIndex < lastSearchResultCanvasIndex); 
+        return (currentCanvasIndex < lastSearchResultCanvasIndex);
     }
 
     getSearchResults(): SearchResult[] {
@@ -320,7 +328,7 @@ class FooterPanel extends BaseFooterPanel {
     }
 
     getLastSearchResultCanvasIndex(): number {
-        const searchResults: SearchResult[] = this.getSearchResults();        
+        const searchResults: SearchResult[] = this.getSearchResults();
         let lastSearchResultCanvasIndex: number = searchResults[searchResults.length - 1].canvasIndex;
         return lastSearchResultCanvasIndex;
     }
@@ -331,7 +339,7 @@ class FooterPanel extends BaseFooterPanel {
 
     updateNextButton(): void {
         const searchResults: SearchResult[] = (<ISeadragonExtension>this.extension).searchResults;
-        
+
         if (searchResults && searchResults.length) {
             if (this.isNextButtonEnabled()) {
                 this.$nextResultButton.removeClass('disabled');
@@ -343,8 +351,8 @@ class FooterPanel extends BaseFooterPanel {
 
     updatePrevButton(): void {
         const searchResults: SearchResult[] = (<ISeadragonExtension>this.extension).searchResults;
-        
-        if (searchResults && searchResults.length) {       
+
+        if (searchResults && searchResults.length) {
             if (this.isPreviousButtonEnabled()) {
                 this.$previousResultButton.removeClass('disabled');
             } else {
@@ -381,6 +389,8 @@ class FooterPanel extends BaseFooterPanel {
         this.$searchText.blur();
 
         this.showSearchSpinner();
+
+        this.hideSearchResultEmptyMessage();
 
         $.publish(Commands.SEARCH, [this.terms]);
     }
@@ -686,6 +696,14 @@ class FooterPanel extends BaseFooterPanel {
         this.$searchPagerContainer.show();
 
         this.resize();
+    }
+
+    showSearchResultEmptyMessage(): void {
+      this.$searchResultNoMatchesContainer.show();
+    }
+
+    hideSearchResultEmptyMessage(): void {
+      this.$searchResultNoMatchesContainer.hide();
     }
 
     resize(): void {
