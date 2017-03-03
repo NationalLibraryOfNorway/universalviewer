@@ -183,7 +183,7 @@
     {
       "content":
       {
-        "clearSearch": "Tøm",
+        "clearSearch": "Nytt søk",
         "defaultLabel": "-",
         "displaying": "{0} {1} av {2}",
         "enterKeyword": "Skriv søkeord",
